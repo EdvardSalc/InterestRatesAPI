@@ -1,0 +1,79 @@
+﻿
+<h2>Demo Interest Rates</h2>
+
+<div>
+    <label for="agreementsDropDown"> AgreementIds:</label>
+    <select  id="agreementsDropDown" disabled="disabled"> </select>
+
+    <label for="viliborDropDown">Vilibor</label>
+    <select  id="viliborDropDown">
+        <option value="VILIBOR1m">VILIBOR1m</option>
+        <option value="VILIBOR3m">VILIBOR3m</option>
+        <option value="VILIBOR6m">VILIBOR6m</option>
+        <option value="VILIBOR1y">VILIBOR1y</option>
+    </select>
+
+    <button id="btnSubmit"  onclick="getInterestRates()" disabled="disabled">Get Interest Rates</button>
+</div>
+
+<a>Demo Response:</a>
+<div>
+    <label id="responseText"></label>
+</div>
+
+
+@Scripts.Render("~/bundles/jquery")
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $.ajax({
+            type: "GET",
+            url: "@Url.Action("GetAgreementData", "Home")",
+            data: {},
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+
+                var array = JSON.parse(JSON.stringify(data));
+                var dd;
+
+                for (var i = 0; i < array.length; i++) {
+                    dd += '<option value ="' + data[i].Id + '">' + data[i].Id + '</option>';
+                }
+
+                $("#agreementsDropDown").html(dd)
+                $("#agreementsDropDown").prop("disabled", false);
+                $("#btnSubmit").prop("disabled", false);
+            }
+        });
+    });
+
+    function getInterestRates() {
+        var agreementid = $("#agreementsDropDown").val();
+        var baseRateCode = $("#viliborDropDown").val();
+        $.ajax({
+            type: "GET",
+            url: "@Url.Action("InterestRate", "api")",
+            data: { Agreementid: agreementid, BaseRateCode: baseRateCode },
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+
+                var json = JSON.stringify(data);
+                $("#responseText").text(json);
+
+            },
+            error: function (e) {
+                alert("Error while getting interes rates");
+
+                var json = JSON.stringify(e);
+                $("#responseText").text(json);
+            }
+        });
+        return false;
+    }
+
+</script>
+
