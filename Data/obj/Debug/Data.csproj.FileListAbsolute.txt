@@ -1,0 +1,13 @@
+E:\AfterWork\ApiDemoSB\InterestRatesAPI\Data\obj\Debug\Data.Migrations.InitialCreate.resources
+E:\AfterWork\ApiDemoSB\InterestRatesAPI\Data\obj\Debug\Data.csproj.GenerateResource.cache
+E:\AfterWork\ApiDemoSB\InterestRatesAPI\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+E:\AfterWork\ApiDemoSB\InterestRatesAPI\Data\bin\Debug\Data.exe.config
+E:\AfterWork\ApiDemoSB\InterestRatesAPI\Data\bin\Debug\Data.exe
+E:\AfterWork\ApiDemoSB\InterestRatesAPI\Data\bin\Debug\Data.pdb
+E:\AfterWork\ApiDemoSB\InterestRatesAPI\Data\bin\Debug\EntityFramework.dll
+E:\AfterWork\ApiDemoSB\InterestRatesAPI\Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\AfterWork\ApiDemoSB\InterestRatesAPI\Data\bin\Debug\EntityFramework.xml
+E:\AfterWork\ApiDemoSB\InterestRatesAPI\Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\AfterWork\ApiDemoSB\InterestRatesAPI\Data\obj\Debug\Data.csproj.CopyComplete
+E:\AfterWork\ApiDemoSB\InterestRatesAPI\Data\obj\Debug\Data.exe
+E:\AfterWork\ApiDemoSB\InterestRatesAPI\Data\obj\Debug\Data.pdb
