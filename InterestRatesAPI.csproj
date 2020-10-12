@@ -168,7 +168,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Data\Data.csproj">
+    <ProjectReference Include="Data\Data.csproj">
       <Project>{30d6964d-f71e-445c-914a-54c90141ab28}</Project>
       <Name>Data</Name>
     </ProjectReference>
