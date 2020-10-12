@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterestRatesAPI", "InterestRatesAPI.csproj", "{73787367-6F40-4946-9BAF-469B95DF9BE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RatesApi", "RatesApi", "{0412A13F-22DB-4686-80FB-8420D33342EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{30D6964D-F71E-445C-914A-54C90141AB28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73787367-6F40-4946-9BAF-469B95DF9BE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73787367-6F40-4946-9BAF-469B95DF9BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73787367-6F40-4946-9BAF-469B95DF9BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73787367-6F40-4946-9BAF-469B95DF9BE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D6964D-F71E-445C-914A-54C90141AB28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D6964D-F71E-445C-914A-54C90141AB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D6964D-F71E-445C-914A-54C90141AB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D6964D-F71E-445C-914A-54C90141AB28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{73787367-6F40-4946-9BAF-469B95DF9BE7} = {0412A13F-22DB-4686-80FB-8420D33342EE}
+		{30D6964D-F71E-445C-914A-54C90141AB28} = {0412A13F-22DB-4686-80FB-8420D33342EE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74770AA8-CA46-4CB6-A6B8-38A7C6A56CC8}
+	EndGlobalSection
+EndGlobal
